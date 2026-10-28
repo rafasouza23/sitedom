@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.perfil-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+}
+
+.interesse-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.foto-interesse {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.legenda-interesse {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.oculto {
+    display: none;
+}
+
+#texto-curiosidade {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef6ff;
+    border-left: 4px solid #007BFF;
+    border-radius: 4px;
+}
+
+.curtidas-card {
+    text-align: center;
+}
+
+.curtidas-card button {
+    margin-top: 10px;
+}
+
+#contador {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+
+body.dark header, body.dark .card {
+    background-color: #1e1e1e;
+}
+
+body.dark .card h2 {
+    color: #4da3ff;
+}
+
+body.dark #texto-curiosidade {
+    background-color: #2a2a2a;
+    border-left-color: #4da3ff;
+}
+
+body.dark .legenda-interesse {
+    color: #aaa;
+}
